@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="serachAddressVC" customModule="Naqliat" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLabel" destination="9Zr-dZ-XP3" id="Irj-JN-aBi"/>
+                <outlet property="map" destination="IIa-FL-xx3" id="cyn-5m-ouQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IIa-FL-xx3">
+                    <rect key="frame" x="0.0" y="105" width="414" height="791"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Ljk-oZ-vyM"/>
+                    </connections>
+                </mapView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1229" translatesAutoresizingMaskIntoConstraints="NO" id="EZ4-hJ-ynP">
+                    <rect key="frame" x="196" y="477.5" width="22" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="CGX-M4-AlK"/>
+                        <constraint firstAttribute="width" constant="22" id="NRa-MK-V7Y"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-dZ-XP3">
+                    <rect key="frame" x="8" y="74.5" width="310" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3E-iO-30J">
+                    <rect key="frame" x="326" y="52" width="80" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="auM-qd-5xs"/>
+                        <constraint firstAttribute="height" constant="45" id="gvR-QL-esw"/>
+                    </constraints>
+                    <state key="normal" title="Choose" backgroundImage="Rectangle 16"/>
+                    <connections>
+                        <action selector="chooseBtn:" destination="-1" eventType="touchUpInside" id="Xcu-GO-Pbv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="IIa-FL-xx3" firstAttribute="top" secondItem="X3E-iO-30J" secondAttribute="bottom" constant="8" id="8iU-Fx-MEm"/>
+                <constraint firstItem="IIa-FL-xx3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FjT-h8-OPr"/>
+                <constraint firstItem="IIa-FL-xx3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GU1-cc-Mw8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X3E-iO-30J" secondAttribute="trailing" constant="8" id="JS3-is-A87"/>
+                <constraint firstItem="X3E-iO-30J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="KtB-DO-DPY"/>
+                <constraint firstItem="EZ4-hJ-ynP" firstAttribute="centerX" secondItem="IIa-FL-xx3" secondAttribute="centerX" id="RHx-fk-52e"/>
+                <constraint firstItem="9Zr-dZ-XP3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="dI8-rt-ddf"/>
+                <constraint firstItem="EZ4-hJ-ynP" firstAttribute="centerY" secondItem="IIa-FL-xx3" secondAttribute="centerY" id="gKg-J4-BoY"/>
+                <constraint firstItem="X3E-iO-30J" firstAttribute="leading" secondItem="9Zr-dZ-XP3" secondAttribute="trailing" constant="8" id="ifV-EU-qQI"/>
+                <constraint firstAttribute="bottom" secondItem="IIa-FL-xx3" secondAttribute="bottom" id="isn-zo-Maz"/>
+                <constraint firstItem="9Zr-dZ-XP3" firstAttribute="centerY" secondItem="X3E-iO-30J" secondAttribute="centerY" id="zZy-vP-1wr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 1229" width="11" height="23"/>
+        <image name="Rectangle 16" width="313" height="51"/>
+    </resources>
+</document>

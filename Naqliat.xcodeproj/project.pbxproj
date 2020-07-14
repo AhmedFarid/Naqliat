@@ -44,6 +44,10 @@
 		69580E0424B521B8009603C2 /* dateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69580E0224B521B8009603C2 /* dateVC.swift */; };
 		69580E0524B521B8009603C2 /* dateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69580E0324B521B8009603C2 /* dateVC.xib */; };
 		6974F95424B94CFE002FE829 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6974F95324B94CFE002FE829 /* JsonSerializer.swift */; };
+		698964C424BDA8AD001B9A6C /* newOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698964C324BDA8AD001B9A6C /* newOrders.swift */; };
+		698964C724BDA975001B9A6C /* myOrdersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698964C624BDA975001B9A6C /* myOrdersApi.swift */; };
+		698964CA24BDAA75001B9A6C /* sideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698964C924BDAA75001B9A6C /* sideMenu.storyboard */; };
+		698964CC24BDAA93001B9A6C /* sideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698964CB24BDAA93001B9A6C /* sideMenuVC.swift */; };
 		69BB675524B4E1D600F53BE5 /* homeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB675324B4E1D600F53BE5 /* homeCell.swift */; };
 		69BB675624B4E1D600F53BE5 /* homeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BB675424B4E1D600F53BE5 /* homeCell.xib */; };
 		69BB675B24B4E86900F53BE5 /* fromVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB675924B4E86900F53BE5 /* fromVC.swift */; };
@@ -99,6 +103,10 @@
 		69580E0224B521B8009603C2 /* dateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateVC.swift; sourceTree = "<group>"; };
 		69580E0324B521B8009603C2 /* dateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dateVC.xib; sourceTree = "<group>"; };
 		6974F95324B94CFE002FE829 /* JsonSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSerializer.swift; sourceTree = "<group>"; };
+		698964C324BDA8AD001B9A6C /* newOrders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newOrders.swift; sourceTree = "<group>"; };
+		698964C624BDA975001B9A6C /* myOrdersApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrdersApi.swift; sourceTree = "<group>"; };
+		698964C924BDAA75001B9A6C /* sideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = sideMenu.storyboard; sourceTree = "<group>"; };
+		698964CB24BDAA93001B9A6C /* sideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMenuVC.swift; sourceTree = "<group>"; };
 		69BB675324B4E1D600F53BE5 /* homeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCell.swift; sourceTree = "<group>"; };
 		69BB675424B4E1D600F53BE5 /* homeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeCell.xib; sourceTree = "<group>"; };
 		69BB675924B4E86900F53BE5 /* fromVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fromVC.swift; sourceTree = "<group>"; };
@@ -137,6 +145,7 @@
 		69244FB624B68E0300A27AC0 /* API Service */ = {
 			isa = PBXGroup;
 			children = (
+				698964C524BDA919001B9A6C /* My Orders Api */,
 				692976DD24B8A7D4002E5666 /* Requests Api */,
 				692976CF24B89FB4002E5666 /* Auth Api */,
 			);
@@ -146,6 +155,7 @@
 		69244FB724B68E1300A27AC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				698964C224BDA890001B9A6C /* MyOreders */,
 				692976E024B8AA03002E5666 /* Meessage */,
 				692976DA24B8A77C002E5666 /* Furniture Type */,
 				692976CC24B89F96002E5666 /* Auth */,
@@ -276,6 +286,7 @@
 		694EE9C624B3CA4600B9A84D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				698964C824BDAA21001B9A6C /* Side Menu */,
 				6924DB6B24BA666800D0ABC2 /* Trailer */,
 				69BB675724B4E80600F53BE5 /* Furnituretransfer */,
 				694EE9CC24B3CB7700B9A84D /* Auth */,
@@ -370,6 +381,31 @@
 				69580E0324B521B8009603C2 /* dateVC.xib */,
 			);
 			path = Date;
+			sourceTree = "<group>";
+		};
+		698964C224BDA890001B9A6C /* MyOreders */ = {
+			isa = PBXGroup;
+			children = (
+				698964C324BDA8AD001B9A6C /* newOrders.swift */,
+			);
+			path = MyOreders;
+			sourceTree = "<group>";
+		};
+		698964C524BDA919001B9A6C /* My Orders Api */ = {
+			isa = PBXGroup;
+			children = (
+				698964C624BDA975001B9A6C /* myOrdersApi.swift */,
+			);
+			path = "My Orders Api";
+			sourceTree = "<group>";
+		};
+		698964C824BDAA21001B9A6C /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				698964C924BDAA75001B9A6C /* sideMenu.storyboard */,
+				698964CB24BDAA93001B9A6C /* sideMenuVC.swift */,
+			);
+			path = "Side Menu";
 			sourceTree = "<group>";
 		};
 		69BB675224B4E19B00F53BE5 /* homeCell */ = {
@@ -517,6 +553,7 @@
 				69BB676824B4FBEC00F53BE5 /* furnitureTypeVC.xib in Resources */,
 				694EE9DF24B3E0FD00B9A84D /* signupVC.xib in Resources */,
 				694EE9CB24B3CA7C00B9A84D /* homeVC.xib in Resources */,
+				698964CA24BDAA75001B9A6C /* sideMenu.storyboard in Resources */,
 				693FB726249F558400043327 /* Assets.xcassets in Resources */,
 				6924DB6F24BA669800D0ABC2 /* trailerVC.xib in Resources */,
 				69BB676D24B4FF9D00F53BE5 /* typeCell.xib in Resources */,
@@ -581,6 +618,7 @@
 				69BB675B24B4E86900F53BE5 /* fromVC.swift in Sources */,
 				6924DB6E24BA669800D0ABC2 /* trailerVC.swift in Sources */,
 				692976D924B8A337002E5666 /* showAlert.swift in Sources */,
+				698964C424BDA8AD001B9A6C /* newOrders.swift in Sources */,
 				69BB676224B4F0E000F53BE5 /* toVC.swift in Sources */,
 				694EE9DE24B3E0FD00B9A84D /* signupVC.swift in Sources */,
 				693FB721249F558200043327 /* ViewController.swift in Sources */,
@@ -595,6 +633,7 @@
 				6930AF0024BA2CCC00434C2F /* locationSearchCell.swift in Sources */,
 				6930AF0524BA3BB400434C2F /* suceessVC.swift in Sources */,
 				6974F95424B94CFE002FE829 /* JsonSerializer.swift in Sources */,
+				698964CC24BDAA93001B9A6C /* sideMenuVC.swift in Sources */,
 				692976DF24B8A7EE002E5666 /* requestsApi.swift in Sources */,
 				694EE9CA24B3CA7C00B9A84D /* homeVC.swift in Sources */,
 				69BB676724B4FBEC00F53BE5 /* furnitureTypeVC.swift in Sources */,
@@ -608,6 +647,7 @@
 				69244FB924B68E3A00A27AC0 /* config.swift in Sources */,
 				694EE9D724B3D6F700B9A84D /* textFieldView.swift in Sources */,
 				692976D124B89FC6002E5666 /* authApi.swift in Sources */,
+				698964C724BDA975001B9A6C /* myOrdersApi.swift in Sources */,
 				693FB71F249F558200043327 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,7 +803,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.FaridEbakers.Naqliat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -782,7 +822,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.FaridEbakers.Naqliat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

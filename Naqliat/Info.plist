@@ -20,6 +20,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>we need to acess you camera to get photos to your request </string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>we need your location to get the nearest  request</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>we need your location to get the nearest  request</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>we need to acess you camera to get photos to your request </string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -50,8 +58,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -62,13 +68,5 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
-	<key>NSCameraUsageDescription</key>
-	<string>we need to acess you camera to get photos to your request </string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>we need to acess you camera to get photos to your request </string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>we need your location to get the nearest  request</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>we need your location to get the nearest  request</string>
 </dict>
 </plist>

@@ -20,6 +20,7 @@ struct URLs {
     static let login = main + "customer/login"
     static let parameters = main + "parameters"
     static let makeOrder = main + "customer/makeOrder"
+    static let newOrders = main + "customer/newOrders"
 
     static let numbersArray = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","14","15","16","17","18","19","20"]
 }
